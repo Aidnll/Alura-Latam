@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <img src="Images/aluraoracle.png">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador_form">
+                    <div class="texto">
+                        <textarea name="texto_area" id="texto" placeholder="Escribe tu mensaje" required></textarea>
+                        <div class="texto_info">
+                            <div class="info">
+                                <p id="warning">AVISO: Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="texto_botones">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text_out_sec">
+                    <div class="out_content">
+                        <div class="content" id="default">
+                            <div class="texto"></div>
+                            <p>Ingresa el texto que desees encriptar o desencriptar!</p>
+                        </div>
+                        <div class = "content invisible" id="result">
+                            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+      <script src="app.js"></script>
+    <footer class="pie-pagina">
+        <p>© 2024 | Oracle + AluraLatam </p>
+    </footer>
+</body>
+</html>
